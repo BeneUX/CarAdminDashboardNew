@@ -2,6 +2,7 @@ import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
 import './App.css';
+import Navbar from "./components/navigation/navbar";
 import Overview from './components/table';
 //import Logout from './components/Logout';
 //import Manage from './components/Manage';
@@ -14,7 +15,9 @@ function App() {
 
   return (
     <>
+    
     <BrowserRouter>
+    <Navbar/>
     <Routes>    
       <Route path="/" element={<Overview />} />
       {/* <Route path="/register" element={<Register />} />
